@@ -1,9 +1,7 @@
 variable "region" {
   default = "us-east-1"
 }
-variable "" {
-  
-}
+
 
 variable "availability_zone_A" {
     default = "us-east-1a"
