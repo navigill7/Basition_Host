@@ -1,6 +1,6 @@
 # creating s3 bucket for storing terraform.tfstate file 
 resource "aws_s3_bucket" "State_bucket" {
- bucket = "basiton-s3-bucket-752"
+ bucket = "basiton-s3-bucket-751"
 }
 resource "aws_s3_bucket_versioning" "versions3" {
   bucket = aws_s3_bucket.State_bucket.id
@@ -28,3 +28,7 @@ resource "aws_dynamodb_table" "statelocking" {
   }
   
 }
+
+
+
+

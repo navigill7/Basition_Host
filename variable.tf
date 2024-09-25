@@ -24,3 +24,9 @@ variable "subnet_B1_cidr" {
 variable "subnet_B2_cidr" {
   default = "192.168.192.0/18"
 }
+variable "ami" {
+  default = "ami-0e86e20dae9224db8"
+}
+variable "instance_type" {
+  default = "t2.micro"
+}
