@@ -22,7 +22,7 @@ resource "aws_route_table_association" "IGW_Route_table_SubnetB" {
 resource "aws_route_table" "NATA_route_table" {
   vpc_id = aws_vpc.Basiton_VPC.id
   route  {
-    cidr_block = "192.168.0.0/18"
+    cidr_block = "0.0.0.0/0"
     nat_gateway_id = aws_nat_gateway.NAT_A.id
   }
 }
@@ -36,7 +36,7 @@ resource "aws_route_table_association" "NATA_Subnet_association" {
 resource "aws_route_table" "NATB_route_table" {
   vpc_id = aws_vpc.Basiton_VPC.id
   route  {
-    cidr_block = "192.168.64.0/18"
+    cidr_block = "0.0.0.0/0"
     nat_gateway_id = aws_nat_gateway.NAT_B.id
   }
 }
