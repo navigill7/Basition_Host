@@ -4,7 +4,7 @@ variable "region" {
 
 
 variable "availability_zone_A" {
-    default = "us-east-1a"
+  default = "us-east-1a"
 }
 variable "availability_zone_B" {
   default = "us-east-1b"
